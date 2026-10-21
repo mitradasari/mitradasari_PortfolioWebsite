@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Sohan Enjamuri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 14mm 16mm 14mm 16mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1e293b;
+      background: #f8fafc;
+      line-height: 1.5;
+      font-size: 13px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .resume-wrapper {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #ffffff;
+      padding: 36px 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .resume-wrapper {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+    .print-bar {
+      max-width: 800px;
+      margin: 15px auto 0;
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+    .btn-print {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #4f46e5;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s;
+    }
+    .btn-print:hover {
+      background: #4338ca;
+    }
+    .btn-back {
+      background: #e2e8f0;
+      color: #334155;
+    }
+    .btn-back:hover {
+      background: #cbd5e1;
+    }
+    /* Header */
+    .header {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 18px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header-info h1 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+    }
+    .header-info .tagline {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #4f46e5;
+      margin-top: 3px;
+    }
+    .header-contacts {
+      text-align: right;
+      font-size: 12px;
+      color: #475569;
+      line-height: 1.6;
+    }
+    .header-contacts a {
+      color: #4f46e5;
+      text-decoration: none;
+    }
+    /* Sections */
+    .section {
+      margin-bottom: 18px;
+    }
+    .section-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #0f172a;
+      border-bottom: 1.5px solid #cbd5e1;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 12px;
+      background: #4f46e5;
+      border-radius: 2px;
+    }
+    /* Content Blocks */
+    .summary-text {
+      color: #334155;
+      font-size: 12.5px;
+      line-height: 1.6;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px 16px;
+    }
+    .skill-category {
+      font-size: 12px;
+    }
+    .skill-category strong {
+      color: #0f172a;
+      display: inline-block;
+      min-width: 130px;
+    }
+    .skill-category span {
+      color: #475569;
+    }
+    /* Items (Experience, Projects, Education) */
+    .item {
+      margin-bottom: 12px;
+    }
+    .item:last-child {
+      margin-bottom: 0;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .item-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .item-subtitle {
+      font-size: 12px;
+      font-weight: 500;
+      color: #4f46e5;
+    }
+    .item-date {
+      font-size: 11.5px;
+      font-weight: 500;
+      color: #64748b;
+    }
+    .item-bullets {
+      list-style-type: disc;
+      padding-left: 18px;
+      margin-top: 4px;
+    }
+    .item-bullets li {
+      font-size: 12px;
+      color: #334155;
+      margin-bottom: 3px;
+      line-height: 1.5;
+    }
+    .project-badges {
+      display: flex;
+      gap: 6px;
+      margin: 3px 0 4px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      display: inline-block;
+      background: #eef2ff;
+      color: #4338ca;
+      font-size: 10.5px;
+      font-weight: 600;
+      padding: 1px 7px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="print-bar no-print">
+    <a href="index.html" class="btn-print btn-back">← Back to Portfolio</a>
+    <button onclick="window.print()" class="btn-print">Print / Save as PDF</button>
+  </div>
+
+  <div class="resume-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-info">
+        <h1>SOHAN ENJAMURI</h1>
+        <div class="tagline">Full-Stack Developer & Software Engineering Student</div>
+      </div>
+      <div class="header-contacts">
+        <div>📧 <a href="mailto:sunnyenjamuri4456@gmail.com">sunnyenjamuri4456@gmail.com</a></div>
+        <div>🌐 <a href="https://github.com/sohanenjamuri">github.com/sohanenjamuri</a></div>
+        <div>🔗 <a href="https://linkedin.com/in/sohan-enjamuri">linkedin.com/in/sohan-enjamuri</a></div>
+        <div>📍 India | Open to Internships & Roles</div>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="section">
+      <div class="section-title">Professional Summary</div>
+      <p class="summary-text">
+        Proactive and detail-oriented Computer Science student with a solid foundation in modern full-stack web development, software engineering principles, and version control using Git and GitHub (Subject: IT4048). Experienced in developing responsive, accessible, and high-performance web applications using HTML5, CSS3, JavaScript (ES6+), React, and Node.js. Adept at collaborative version control workflows including branching, pull requests, automated GitHub Pages deployments, and resolving merge conflicts.
+      </p>
+    </section>
+
+    <!-- Technical & Soft Skills -->
+    <section class="section">
+      <div class="section-title">Technical & Soft Skills</div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <strong>Frontend:</strong>
+          <span>HTML5, CSS3, JavaScript (ES6+), React.js, Responsive Web Design, Flexbox, Grid</span>
+        </div>
+        <div class="skill-category">
+          <strong>Backend & DB:</strong>
+          <span>Node.js, Express.js, RESTful APIs, JSON, MongoDB, PostgreSQL, SQL</span>
+        </div>
+        <div class="skill-category">
+          <strong>Version Control & Tools:</strong>
+          <span>Git, GitHub, GitHub Pages, Branching & Rebasing, GitHub Actions, VS Code, Bash</span>
+        </div>
+        <div class="skill-category">
+          <strong>Soft Skills:</strong>
+          <span>Problem-Solving, Team Collaboration, Agile Mindset, Technical Writing, Adaptability</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section class="section">
+      <div class="section-title">Featured Projects</div>
+
+      <!-- Project 1 -->
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">DevPulse — Real-Time Developer Activity Dashboard</span>
+          <span class="item-date">2026</span>
+        </div>
+        <div class="project-badges">
+          <span class="badge">JavaScript</span>
+          <span class="badge">GitHub REST API</span>
+          <span class="badge">Chart.js</span>
+          <span class="badge">CSS3</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Architected an interactive analytics dashboard visualizing commit trends, code frequencies, and active pull requests via GitHub's REST API.</li>
+          <li>Engineered dynamic chart rendering and caching mechanisms, reducing API rate-limit overhead by 40%.</li>
+          <li>Deployed live on GitHub Pages with automated CI/CD branch sync.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">CloudVault — Secure File Storage & Management Interface</span>
+          <span class="item-date">2026</span>
+        </div>
+        <div class="project-badges">
+          <span class="badge">HTML5</span>
+          <span class="badge">CSS Glassmorphism</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">LocalStorage API</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Designed a sleek dark-mode cloud storage portal with drag-and-drop file upload, size verification, and progress monitoring.</li>
+          <li>Implemented client-side file categorization, fast search filtering, and download simulations.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">AlgoArena — Interactive Algorithm & Sorting Visualizer</span>
+          <span class="item-date">2025 – 2026</span>
+        </div>
+        <div class="project-badges">
+          <span class="badge">JavaScript</span>
+          <span class="badge">HTML5 Canvas</span>
+          <span class="badge">Algorithms</span>
+          <span class="badge">CSS Animations</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Built step-by-step visualizations for QuickSort, MergeSort, and BubbleSort with custom array generators and speed controllers.</li>
+          <li>Displayed real-time comparison counters and space-time complexity analysis metrics.</li>
+        </ul>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Personal Portfolio Website (IT4048 Submission)</span>
+          <span class="item-date">2026</span>
+        </div>
+        <div class="project-badges">
+          <span class="badge">Semantic HTML5</span>
+          <span class="badge">Modern CSS3</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">GitHub Pages</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Developed an ultra-responsive, accessible personal portfolio adhering to strict course guidelines for IT4048.</li>
+          <li>Features dark/light mode toggle, interactive contact validation, animated skill metrics, and live GitHub deployment.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <div class="section-title">Education</div>
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">Bachelor of Technology in Computer Science & Engineering</span>
+          <span class="item-date">2023 – 2027</span>
+        </div>
+        <div class="item-subtitle">Relevant Coursework & Mini-Projects</div>
+        <ul class="item-bullets">
+          <li><strong>IT4048: Version Control with Git and GitHub</strong> — Branching strategies, Git workflows, GitHub Pages deployment, repository administration.</li>
+          <li>Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Web Technologies.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certifications & Achievements -->
+    <section class="section">
+      <div class="section-title">Certifications & Achievements</div>
+      <ul class="item-bullets">
+        <li><strong>Version Control with Git & GitHub:</strong> Proficient in distributed version control, pull-request collaboration, and GitHub Pages hosting.</li>
+        <li><strong>Open Source Contributor:</strong> Active participant in academic and open-source GitHub repositories.</li>
+        <li><strong>Hackathon Participant:</strong> Collaborated in agile student developer teams building responsive web solutions.</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

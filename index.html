@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sohan Enjamuri | Full-Stack Developer & Software Engineering Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Personal portfolio of Sohan Enjamuri - Full-Stack Developer & Computer Science Student. Featuring web projects, technical skills in JavaScript, React, Node.js, and Git version control for IT4048.">
+  <meta name="keywords" content="Sohan Enjamuri, Portfolio, Web Developer, Full-Stack Developer, IT4048, Version Control, Git, GitHub Pages, React, JavaScript">
+  <meta name="author" content="Sohan Enjamuri">
+  <meta name="theme-color" content="#0a0f1d">
+  
+  <!-- Open Graph / Social Cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sohan Enjamuri | Portfolio Website">
+  <meta property="og:description" content="Explore my projects, technical skills, and resume. Developed for IT4048 Version Control with Git and GitHub.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a href="#home" class="logo" id="site-logo" aria-label="Sohan Enjamuri Homepage">
+        <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+        <span class="logo-text">Sohan<span class="logo-highlight">.dev</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active" id="nav-home"><i class="fa-solid fa-house nav-icon"></i> Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link" id="nav-about"><i class="fa-solid fa-user nav-icon"></i> About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link" id="nav-skills"><i class="fa-solid fa-bolt nav-icon"></i> Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link" id="nav-projects"><i class="fa-solid fa-laptop-code nav-icon"></i> Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" id="nav-contact"><i class="fa-solid fa-envelope nav-icon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle, Resume Button, Mobile Hamburger) -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i class="fa-solid fa-moon theme-icon-dark" id="theme-icon"></i>
+        </button>
+
+        <!-- Resume Download CTA in Header -->
+        <a href="resume.pdf" download="Sohan_Enjamuri_Resume.pdf" class="btn btn-sm btn-outline header-resume-btn" id="header-resume-download" title="Download PDF Resume">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <div class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+        <span class="logo-text">Sohan<span class="logo-highlight">.dev</span></span>
+      </div>
+      <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#home" class="mobile-nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user"></i> About Me</a></li>
+      <li><a href="#skills" class="mobile-nav-link"><i class="fa-solid fa-bolt"></i> Skills & Stack</a></li>
+      <li><a href="#projects" class="mobile-nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+      <li><a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="resume.pdf" download="Sohan_Enjamuri_Resume.pdf" class="btn btn-primary btn-block">
+        <i class="fa-solid fa-file-arrow-down"></i> Download Resume (PDF)
+      </a>
+      <div class="mobile-socials">
+        <a href="https://github.com/sohanenjamuri" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/sohan-enjamuri" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:sunnyenjamuri4456@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main">
+    <!-- SECTION 1: HOME / HERO -->
+    <section class="hero-section" id="home">
+      <!-- Background Decorative Blobs -->
+      <div class="glow-orb orb-1"></div>
+      <div class="glow-orb orb-2"></div>
+      <div class="glow-orb orb-3"></div>
+
+      <div class="container hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Available for internships & collaborations</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Sohan Enjamuri</span>
+          </h1>
+
+          <div class="hero-tagline-wrapper">
+            <span class="tagline-prefix">I build</span>
+            <span class="typing-text" id="typing-text">responsive web applications</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate Computer Science student and Full-Stack Developer specializing in modern JavaScript, responsive interfaces, and scalable architectures. Focused on clean code, Git version control workflows, and building delightful user experiences.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+              <span>View Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Get in Touch</span>
+            </a>
+            <!-- Working Resume Download Button -->
+            <a href="resume.pdf" download="Sohan_Enjamuri_Resume.pdf" class="btn btn-accent" id="hero-resume-download" title="Download PDF Resume">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download CV (PDF)</span>
+            </a>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="hero-socials">
+            <span class="socials-label">Connect:</span>
+            <a href="https://github.com/sohanenjamuri" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub Profile" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/sohan-enjamuri" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn Profile" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:sunnyenjamuri4456@gmail.com" class="social-chip" aria-label="Direct Email" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Photo Card -->
+        <div class="hero-visual">
+          <div class="profile-card-glow"></div>
+          <div class="profile-card">
+            <div class="profile-image-wrapper">
+              <img src="assets/images/profile.jpg" alt="Portrait photo of Sohan Enjamuri" class="profile-img" id="hero-profile-img" loading="eager">
+              <div class="profile-border-ring"></div>
+            </div>
+
+            <!-- Floating Badge 1: Git & GitHub -->
+            <div class="floating-badge badge-top-right">
+              <i class="fa-brands fa-git-alt text-git"></i>
+              <div class="badge-text">
+                <span class="badge-title">Git & GitHub</span>
+                <span class="badge-subtitle">IT4048 Certified</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2: Full Stack -->
+            <div class="floating-badge badge-bottom-left">
+              <i class="fa-solid fa-layer-group text-accent"></i>
+              <div class="badge-text">
+                <span class="badge-title">Full-Stack</span>
+                <span class="badge-subtitle">JS • React • Node</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge 3: GitHub Pages Live -->
+            <div class="floating-badge badge-bottom-right">
+              <i class="fa-solid fa-cloud-arrow-up text-cyan"></i>
+              <div class="badge-text">
+                <span class="badge-title">GitHub Pages</span>
+                <span class="badge-subtitle">Live Deployed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span class="mouse-icon">
+          <span class="wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- SECTION 2: ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-user"></i> Introduction</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Bridging technical creativity and engineering discipline to build modern web solutions</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Biography & Background -->
+          <div class="about-card bio-card">
+            <div class="card-icon-header">
+              <div class="icon-circle"><i class="fa-solid fa-terminal"></i></div>
+              <h3>Who I Am</h3>
+            </div>
+            <p class="about-text">
+              Hello! I'm <strong>Sohan Enjamuri</strong> (also known as Sunny), a Computer Science undergraduate driven by a relentless enthusiasm for software engineering, web technologies, and collaborative version control.
+            </p>
+            <p class="about-text">
+              My engineering philosophy revolves around creating responsive, accessible, and performant digital experiences. I believe good software goes beyond code syntax—it blends user empathy with clean architecture and robust version control.
+            </p>
+            <p class="about-text">
+              As part of my course <strong>IT4048 (Version Control with Git and GitHub)</strong>, I have developed a strong mastery of distributed version control principles—mastering branch management, rebasing, pull-request peer reviews, and automated CI/CD deployments through GitHub Pages.
+            </p>
+
+            <!-- Academic & Course Info Box -->
+            <div class="course-highlight-box">
+              <div class="course-badge"><i class="fa-solid fa-graduation-cap"></i> Course IT4048 Mini Project</div>
+              <div class="course-info">
+                <span><strong>Subject:</strong> IT4048 Version Control with Git and GitHub</span>
+                <span><strong>Objective:</strong> Responsive Personal Portfolio with Live GitHub Pages Deployment</span>
+              </div>
+            </div>
+
+            <!-- Resume Action Buttons Box -->
+            <div class="about-resume-box">
+              <div class="resume-box-text">
+                <i class="fa-solid fa-file-pdf text-accent"></i>
+                <div>
+                  <strong>Curriculum Vitae / Résumé</strong>
+                  <p>Up-to-date summary of my technical skills, projects, and education</p>
+                </div>
+              </div>
+              <div class="resume-box-actions">
+                <a href="resume.pdf" download="Sohan_Enjamuri_Resume.pdf" class="btn btn-primary btn-sm" id="about-resume-download">
+                  <i class="fa-solid fa-download"></i> Download PDF
+                </a>
+                <button class="btn btn-outline btn-sm" id="view-resume-modal-btn">
+                  <i class="fa-solid fa-eye"></i> View Résumé
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Key Pillars & Live Metrics -->
+          <div class="about-stats-container">
+            <!-- Metric Cards -->
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-code-branch"></i></div>
+                <div class="stat-number" data-count="15">15+</div>
+                <div class="stat-label">GitHub Repositories</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <div class="stat-number" data-count="4">4+</div>
+                <div class="stat-label">Featured Projects</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-code-commit"></i></div>
+                <div class="stat-number" data-count="500">500+</div>
+                <div class="stat-label">Git Commits</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Responsive Design</div>
+              </div>
+            </div>
+
+            <!-- Pillars / What I Focus On -->
+            <div class="about-card pillars-card">
+              <div class="card-icon-header">
+                <div class="icon-circle"><i class="fa-solid fa-compass-drafting"></i></div>
+                <h3>Core Competencies</h3>
+              </div>
+              <div class="pillars-list">
+                <div class="pillar-item">
+                  <div class="pillar-dot"></div>
+                  <div>
+                    <strong>Responsive Frontend Architecture:</strong>
+                    <span>Crafting clean, accessible, and fast interfaces using semantic HTML5, modern CSS3 (Flexbox/Grid), and JavaScript/React.</span>
+                  </div>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-dot"></div>
+                  <div>
+                    <strong>Git Version Control & CI/CD:</strong>
+                    <span>Strict adherence to feature-branching, commit hygiene, pull-request reviews, and GitHub Pages automated continuous delivery.</span>
+                  </div>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-dot"></div>
+                  <div>
+                    <strong>API Integration & Scalability:</strong>
+                    <span>Building RESTful backends and consuming external APIs with proper error handling and client-side caching.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SKILLS -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-bolt"></i> Capabilities</span>
+          <h2 class="section-title">Technical & <span class="gradient-text">Soft Skills</span></h2>
+          <p class="section-subtitle">A balanced toolkit combining modern web technologies, version control, and collaborative problem-solving</p>
+        </div>
+
+        <!-- Skill Filter Tabs -->
+        <div class="skills-filter-nav" role="tablist" aria-label="Skills Category Filter">
+          <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="filter-tab" data-filter="frontend" role="tab" aria-selected="false">Frontend Development</button>
+          <button class="filter-tab" data-filter="backend" role="tab" aria-selected="false">Backend & Database</button>
+          <button class="filter-tab" data-filter="git-tools" role="tab" aria-selected="false">Git & DevOps Tools</button>
+          <button class="filter-tab" data-filter="soft" role="tab" aria-selected="false">Soft Skills</button>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="skills-grid" id="skills-grid">
+          <!-- FRONTEND SKILLS -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box text-orange"><i class="fa-brands fa-html5"></i></div>
+              <div class="skill-details">
+                <span class="skill-name">HTML5 & Semantic Markup</span>
+                <span class="skill-level-badge">Advanced</span>
+              </div>
+            </div>
+            <p class="skill-desc">Accessible DOM structure, SEO optimization, and standard semantic components.</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-progress="92%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Proficiency</span>
+              <span class="progress-percent">92%</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box text-blue"><i class="fa-brands fa-css3-alt"></i></div>
+              <div class="skill-details">
+                <span class="skill-name">CSS3 & Responsive Design</span>
+                <span class="skill-level-badge">Advanced</span>
+              </div>
+            </div>
+            <p class="skill-desc">CSS Grid, Flexbox, Custom Properties, keyframe animations, and glassmorphism styling.</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-progress="90%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Proficiency</span>
+              <span class="progress-percent">90%</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box text-yellow"><i class="fa-brands fa-js"></i></div>
+              <div class="skill-details">
+                <span class="skill-name">JavaScript (ES6+)</span>
+                <span class="skill-level-badge">Proficient</span>
+              </div>
+            </div>
+            <p class="skill-desc">Async/Await, Fetch API, DOM manipulation, modular architecture, and event handling.</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-progress="88%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Proficiency</span>
+              <span class="progress-percent">88%</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box text-cyan"><i class="fa-brands fa-react"></i></div>
+              <div class="skill-details">
+                <span class="skill-name">React.js & Hooks</span>
+                <span class="skill-level-badge">Proficient</span>
+              </div>
+            </div>
+            <p class="skill-desc">Component-driven architecture, state management with Hooks, and virtual DOM performance.</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-progress="82%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Proficiency</span>
+              <span class="progress-percent">82%</span>
+            </div>
+          </div>
+
+          <!-- BACKEND & DATABASE -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box text-green"><i class="fa-brands fa-node-js"></i></div>
+              <div class="skill-details">
+                <span class="skill-name">Node.js & Express</span>
+                <span class="skill-level-badge">Proficient</span>
+              </div>
+            </div>
+            <p class="skill-desc">REST API design, middleware handling, authentication logic, and JSON response endpoints.</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-progress="80%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Proficiency</span>
+              <span class="progress-percent">80%</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box text-python"><i class="fa-brands fa-python"></i></div>
+              <div class="skill-details">
+                <span class="skill-name">Python & Scripting</span>
+                <span class="skill-level-badge">Proficient</span>
+              </div>
+            </div>
+            <p class="skill-desc">Data processing, algorithmic automation, and backend API integration.</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-progress="82%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Proficiency</span>
+              <span class="progress-percent">82%</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box text-cyan"><i class="fa-solid fa-database"></i></div>
+              <div class="skill-details">
+                <span class="skill-name">SQL & Databases</span>
+                <span class="skill-level-badge">Proficient</span>
+              </div>
+            </div>
+            <p class="skill-desc">Schema design, relational queries, PostgreSQL/MySQL fundamentals, and MongoDB.</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-progress="78%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Proficiency</span>
+              <span class="progress-percent">78%</span>
+            </div>
+          </div>
+
+          <!-- GIT & DEVOPS TOOLS (SUBJECT FOCUS) -->
+          <div class="skill-card" data-category="git-tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-box text-git"><i class="fa-brands fa-git-alt"></i></div>
+              <div class="skill-details">
+                <span class="skill-name">Git (Version Control)</span>
+                <span class="skill-level-badge badge-star"><i class="fa-solid fa-star"></i> IT4048 Core</span>
+              </div>
+            </div>
+            <p class="skill-desc">Branching models, semantic commits, merge conflict resolution, interactive rebasing & stashing.</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-progress="95%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Proficiency</span>
+              <span class="progress-percent">95%</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="git-tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-box text-light"><i class="fa-brands fa-github"></i></div>
+              <div class="skill-details">
+                <span class="skill-name">GitHub & Pages Deployment</span>
+                <span class="skill-level-badge badge-star"><i class="fa-solid fa-star"></i> IT4048 Core</span>
+              </div>
+            </div>
+            <p class="skill-desc">Remote repository administration, Pull Requests, Code Reviews, and GitHub Pages live hosting.</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-progress="94%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Proficiency</span>
+              <span class="progress-percent">94%</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="git-tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-box text-blue"><i class="fa-solid fa-code"></i></div>
+              <div class="skill-details">
+                <span class="skill-name">VS Code & CLI Tools</span>
+                <span class="skill-level-badge">Advanced</span>
+              </div>
+            </div>
+            <p class="skill-desc">PowerShell, Unix Bash, debugging tools, linters, and developer toolchain extensions.</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-progress="90%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Proficiency</span>
+              <span class="progress-percent">90%</span>
+            </div>
+          </div>
+
+          <!-- SOFT SKILLS -->
+          <div class="skill-card" data-category="soft">
+            <div class="skill-card-top">
+              <div class="skill-icon-box text-purple"><i class="fa-solid fa-brain"></i></div>
+              <div class="skill-details">
+                <span class="skill-name">Analytical Problem Solving</span>
+                <span class="skill-level-badge">Soft Skill</span>
+              </div>
+            </div>
+            <p class="skill-desc">Breaking down complex requirements into testable, maintainable, and decoupled modules.</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-progress="92%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Proficiency</span>
+              <span class="progress-percent">92%</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="soft">
+            <div class="skill-card-top">
+              <div class="skill-icon-box text-teal"><i class="fa-solid fa-people-group"></i></div>
+              <div class="skill-details">
+                <span class="skill-name">Team Collaboration & Git PRs</span>
+                <span class="skill-level-badge">Soft Skill</span>
+              </div>
+            </div>
+            <p class="skill-desc">Conducting constructive peer reviews, writing clear commit messages, and collaborative pair coding.</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-progress="90%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Proficiency</span>
+              <span class="progress-percent">90%</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="soft">
+            <div class="skill-card-top">
+              <div class="skill-icon-box text-yellow"><i class="fa-solid fa-lightbulb"></i></div>
+              <div class="skill-details">
+                <span class="skill-name">Adaptability & Fast Learning</span>
+                <span class="skill-level-badge">Soft Skill</span>
+              </div>
+            </div>
+            <p class="skill-desc">Constantly exploring new web APIs, frameworks, and modern development standards.</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-progress="94%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Proficiency</span>
+              <span class="progress-percent">94%</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="soft">
+            <div class="skill-card-top">
+              <div class="skill-icon-box text-green"><i class="fa-solid fa-file-lines"></i></div>
+              <div class="skill-details">
+                <span class="skill-name">Technical Documentation</span>
+                <span class="skill-level-badge">Soft Skill</span>
+              </div>
+            </div>
+            <p class="skill-desc">Clear READMEs, project architecture reports, API contracts, and clean inline code comments.</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-progress="88%"></div>
+            </div>
+            <div class="progress-info">
+              <span>Proficiency</span>
+              <span class="progress-percent">88%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PROJECTS -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-laptop-code"></i> Portfolio Showcase</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Real-world applications built with clean code, modern UX, and version control best practices</p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filter-nav" role="tablist" aria-label="Project Category Filter">
+          <button class="project-filter-btn active" data-filter="all">All Projects (4)</button>
+          <button class="project-filter-btn" data-filter="fullstack">Full Stack & APIs</button>
+          <button class="project-filter-btn" data-filter="frontend">Frontend & UI</button>
+          <button class="project-filter-btn" data-filter="tools">Algorithms & Tools</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- PROJECT 1: DevPulse -->
+          <article class="project-card" data-category="fullstack" id="project-devpulse">
+            <div class="project-media">
+              <img src="assets/images/project-devpulse.jpg" alt="DevPulse Developer Activity Dashboard Preview" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-light open-modal-btn" data-project="devpulse" aria-label="Quick View DevPulse project">
+                  <i class="fa-solid fa-expand"></i> Quick Details
+                </button>
+              </div>
+              <span class="project-badge"><i class="fa-brands fa-github"></i> IT4048 Highlight</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">GitHub REST API</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+              <h3 class="project-title">DevPulse — Developer Activity Dashboard</h3>
+              <p class="project-desc">
+                An interactive developer analytics dashboard that connects directly to the GitHub REST API to track commit trends, pull request statuses, and contributor code frequencies in real-time.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/sohanenjamuri/devpulse-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" aria-label="DevPulse GitHub Repository">
+                  <i class="fa-brands fa-github"></i> GitHub Link
+                </a>
+                <a href="https://sohanenjamuri.github.io/devpulse-analytics" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="DevPulse Live Demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: CloudVault -->
+          <article class="project-card" data-category="frontend" id="project-cloudvault">
+            <div class="project-media">
+              <img src="assets/images/project-cloudvault.jpg" alt="CloudVault Modern Storage Web App Preview" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-light open-modal-btn" data-project="cloudvault" aria-label="Quick View CloudVault project">
+                  <i class="fa-solid fa-expand"></i> Quick Details
+                </button>
+              </div>
+              <span class="project-badge"><i class="fa-solid fa-shield-halved"></i> Cloud Storage</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS Glassmorphism</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">LocalStorage</span>
+              </div>
+              <h3 class="project-title">CloudVault — Secure Cloud File Platform</h3>
+              <p class="project-desc">
+                A sleek dark-mode cloud storage portal featuring drag-and-drop file uploads, real-time upload progress indicators, file categorization, search filtering, and simulated client-side encryption.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/sohanenjamuri/cloudvault-storage" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" aria-label="CloudVault GitHub Repository">
+                  <i class="fa-brands fa-github"></i> GitHub Link
+                </a>
+                <a href="https://sohanenjamuri.github.io/cloudvault-storage" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="CloudVault Live Demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: AlgoArena -->
+          <article class="project-card" data-category="tools" id="project-algoarena">
+            <div class="project-media">
+              <img src="assets/images/project-algoarena.jpg" alt="AlgoArena Algorithm Visualizer Preview" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-light open-modal-btn" data-project="algoarena" aria-label="Quick View AlgoArena project">
+                  <i class="fa-solid fa-expand"></i> Quick Details
+                </button>
+              </div>
+              <span class="project-badge"><i class="fa-solid fa-brain"></i> Interactive Tool</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">JavaScript ES6</span>
+                <span class="tech-tag">HTML5 Canvas</span>
+                <span class="tech-tag">Algorithms</span>
+                <span class="tech-tag">CSS Flex</span>
+              </div>
+              <h3 class="project-title">AlgoArena — Interactive Algorithm Visualizer</h3>
+              <p class="project-desc">
+                Educational interactive visualizer illustrating sorting algorithms (QuickSort, MergeSort, BubbleSort) with real-time speed controls, step-by-step array animations, and Big-O complexity counters.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/sohanenjamuri/algo-arena-visualizer" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" aria-label="AlgoArena GitHub Repository">
+                  <i class="fa-brands fa-github"></i> GitHub Link
+                </a>
+                <a href="https://sohanenjamuri.github.io/algo-arena-visualizer" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="AlgoArena Live Demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: ShopWave -->
+          <article class="project-card" data-category="fullstack" id="project-shopwave">
+            <div class="project-media">
+              <img src="assets/images/project-shopwave.jpg" alt="ShopWave Modern E-Commerce Preview" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-light open-modal-btn" data-project="shopwave" aria-label="Quick View ShopWave project">
+                  <i class="fa-solid fa-expand"></i> Quick Details
+                </button>
+              </div>
+              <span class="project-badge"><i class="fa-solid fa-cart-shopping"></i> Web Store</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">Modern JS</span>
+                <span class="tech-tag">CSS Grid</span>
+                <span class="tech-tag">State Logic</span>
+                <span class="tech-tag">Toast UI</span>
+              </div>
+              <h3 class="project-title">ShopWave — Next-Gen E-Commerce Web App</h3>
+              <p class="project-desc">
+                High-performance storefront interface with instant product filtering, slide-out shopping cart drawer, persistent cart state, dynamic coupon calculations, and responsive mobile navigation.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/sohanenjamuri/shopwave-ecommerce" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" aria-label="ShopWave GitHub Repository">
+                  <i class="fa-brands fa-github"></i> GitHub Link
+                </a>
+                <a href="https://sohanenjamuri.github.io/shopwave-ecommerce" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="ShopWave Live Demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-envelope"></i> Let's Talk</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">Interested in collaborating on a project or discussing opportunities? Send a message!</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Left Column: Contact Cards & Socials -->
+          <div class="contact-sidebar">
+            <div class="contact-info-card">
+              <div class="info-card-header">
+                <h3>Contact Information</h3>
+                <p>Feel free to reach out through any of these channels or submit the form.</p>
+              </div>
+
+              <div class="info-items-list">
+                <!-- Email Item -->
+                <div class="info-item">
+                  <div class="info-icon text-indigo"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="info-details">
+                    <span class="info-label">Email Address</span>
+                    <a href="mailto:sunnyenjamuri4456@gmail.com" class="info-link" id="email-link">sunnyenjamuri4456@gmail.com</a>
+                    <button class="copy-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy email">
+                      <i class="fa-regular fa-copy"></i> <span>Copy</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- GitHub Item -->
+                <div class="info-item">
+                  <div class="info-icon text-light"><i class="fa-brands fa-github"></i></div>
+                  <div class="info-details">
+                    <span class="info-label">GitHub Profile</span>
+                    <a href="https://github.com/sohanenjamuri" target="_blank" rel="noopener noreferrer" class="info-link">github.com/sohanenjamuri</a>
+                  </div>
+                </div>
+
+                <!-- LinkedIn Item -->
+                <div class="info-item">
+                  <div class="info-icon text-blue"><i class="fa-brands fa-linkedin-in"></i></div>
+                  <div class="info-details">
+                    <span class="info-label">LinkedIn Profile</span>
+                    <a href="https://linkedin.com/in/sohan-enjamuri" target="_blank" rel="noopener noreferrer" class="info-link">linkedin.com/in/sohan-enjamuri</a>
+                  </div>
+                </div>
+
+                <!-- Location Item -->
+                <div class="info-item">
+                  <div class="info-icon text-cyan"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="info-details">
+                    <span class="info-label">Location & Timezone</span>
+                    <span class="info-text">India (IST • UTC+5:30)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Status -->
+              <div class="availability-card">
+                <div class="status-indicator">
+                  <span class="ping-circle"></span>
+                  <span class="dot-circle"></span>
+                </div>
+                <div class="availability-text">
+                  <strong>Open to Roles</strong>
+                  <span>Seeking Software Developer & Engineering Internships</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-container">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-title-bar">
+                <h3>Send a Message</h3>
+                <span class="form-badge"><i class="fa-solid fa-shield"></i> Instant Response</span>
+              </div>
+
+              <!-- Form Alert / Feedback Box -->
+              <div class="form-alert" id="form-alert" role="alert" style="display: none;"></div>
+
+              <div class="form-row">
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="contact-name">Your Full Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g. John Doe" required autocomplete="name">
+                  </div>
+                  <span class="error-msg" id="name-error"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="contact-email">Email Address <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="contact-email" name="email" class="form-control" placeholder="e.g. john@example.com" required autocomplete="email">
+                  </div>
+                  <span class="error-msg" id="email-error"></span>
+                </div>
+              </div>
+
+              <!-- Subject Field -->
+              <div class="form-group">
+                <label for="contact-subject">Subject <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-pen-to-square input-icon"></i>
+                  <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="e.g. Project Inquiry / Collaboration / Job Opportunity" required>
+                </div>
+                <span class="error-msg" id="subject-error"></span>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <div class="message-label-row">
+                  <label for="contact-message">Your Message <span class="required">*</span></label>
+                  <span class="char-count" id="char-counter">0 / 500</span>
+                </div>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-regular fa-comment-dots input-icon"></i>
+                  <textarea id="contact-message" name="message" class="form-control" rows="5" placeholder="Write your message here... (minimum 10 characters)" maxlength="500" required></textarea>
+                </div>
+                <span class="error-msg" id="message-error"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="contact-submit-btn">
+                <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+                <span class="btn-loader" style="display: none;"><i class="fa-solid fa-spinner fa-spin"></i> Sending...</span>
+              </button>
+
+              <p class="form-privacy-note">
+                <i class="fa-solid fa-lock"></i> Your information is treated confidentially and never shared.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+            <span class="logo-text">Sohan<span class="logo-highlight">.dev</span></span>
+          </a>
+          <p class="footer-tagline">Crafting modern, accessible, and high-performance digital experiences.</p>
+          <div class="footer-course-tag">
+            <i class="fa-solid fa-code-branch"></i> Course IT4048: Version Control with Git & GitHub Mini-Project
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills & Expertise</a></li>
+            <li><a href="#projects">Featured Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Deliverables</h4>
+          <ul>
+            <li><a href="resume.pdf" download="Sohan_Enjamuri_Resume.pdf"><i class="fa-solid fa-file-pdf"></i> Download Résumé (PDF)</a></li>
+            <li><a href="resume.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View HTML Résumé</a></li>
+            <li><a href="https://github.com/sohanenjamuri" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub Repositories</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Inquire Directly</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Social Media</h4>
+          <div class="footer-social-icons">
+            <a href="https://github.com/sohanenjamuri" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/sohan-enjamuri" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:sunnyenjamuri4456@gmail.com" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2026 Sohan Enjamuri. Built for IT4048 Version Control with Git & GitHub. Hosted with ❤️ on GitHub Pages.
+        </p>
+        <button class="back-to-top" id="back-to-top" aria-label="Scroll to top of page" title="Back to top">
+          <i class="fa-solid fa-chevron-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RESUME VIEW MODAL -->
+  <div class="modal" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-backdrop" id="resume-modal-backdrop"></div>
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="resume-modal-title"><i class="fa-solid fa-file-pdf text-accent"></i> Sohan Enjamuri — Résumé</h3>
+          <button class="modal-close-btn" id="resume-modal-close" aria-label="Close modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body resume-modal-body">
+          <iframe src="resume.html" title="Sohan Enjamuri Resume" class="resume-iframe" id="resume-iframe"></iframe>
+        </div>
+        <div class="modal-footer">
+          <a href="resume.pdf" download="Sohan_Enjamuri_Resume.pdf" class="btn btn-primary" id="modal-resume-download">
+            <i class="fa-solid fa-download"></i> Download PDF
+          </a>
+          <a href="resume.html" target="_blank" class="btn btn-outline">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in New Tab
+          </a>
+          <button class="btn btn-secondary" id="modal-resume-dismiss">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT DETAILS QUICK VIEW MODAL -->
+  <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+    <div class="modal-backdrop" id="project-modal-backdrop"></div>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="project-modal-title">Project Details</h3>
+          <button class="modal-close-btn" id="project-modal-close" aria-label="Close modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body" id="project-modal-content">
+          <!-- Dynamically populated via script.js -->
+        </div>
+        <div class="modal-footer" id="project-modal-footer">
+          <!-- Action buttons dynamically inserted -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Main Application Script -->
+  <script src="script.js"></script>
+</body>
+</html>

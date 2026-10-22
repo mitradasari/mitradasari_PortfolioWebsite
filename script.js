@@ -1,7 +1,7 @@
 /**
  * ==============================================================================
  * PORTFOLIO CLIENT-SIDE INTERACTIVITY SCRIPT
- * Student: Sohan Enjamuri
+ * Student: Mitra Dasari
  * Course: IT4048 - Version Control with Git and GitHub
  * ==============================================================================
  */
@@ -13,6 +13,22 @@ document.addEventListener('DOMContentLoaded', () => {
      1. Project Data Store for Quick View Modal
      -------------------------------------------------------------------------- */
   const projectsData = {
+    ethnichub: {
+      title: 'Ethnic Hub — Wholesale Traditional Wear Website',
+      category: 'Academic Project & Web Design',
+      badge: 'Academic Project',
+      image: 'assets/images/project-ethnichub.jpg',
+      tags: ['HTML5', 'CSS3', 'Web Design', 'Java', 'SQL'],
+      description: 'A dedicated website concept engineered for a traditional-wear wholesale business, featuring categorized catalog displays, interactive shopping cart capabilities, and database-driven product inventory.',
+      features: [
+        'Developed a comprehensive website concept tailored for traditional-wear wholesale businesses.',
+        'Designed responsive web pages to present ethnic wear collections with detailed product views.',
+        'Implemented core customer workflows: catalog filtering, dynamic shopping cart, and contact inquiry form.',
+        'Explored SQL database schema integration and web functionality for inventory management.'
+      ],
+      githubUrl: 'https://github.com/mitradasari/ethnic-hub-website',
+      liveUrl: 'https://mitradasari.github.io/ethnic-hub-website'
+    },
     devpulse: {
       title: 'DevPulse — Developer Activity & GitHub Analytics',
       category: 'Full Stack & GitHub API',
@@ -26,8 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Configurable repository selector supporting both public and personal developer profiles.',
         'Zero-dependency build pipeline configured for instant GitHub Pages continuous deployment.'
       ],
-      githubUrl: 'https://github.com/sohanenjamuri/devpulse-analytics',
-      liveUrl: 'https://sohanenjamuri.github.io/devpulse-analytics'
+      githubUrl: 'https://github.com/mitradasari/devpulse-analytics',
+      liveUrl: 'https://mitradasari.github.io/devpulse-analytics'
     },
     cloudvault: {
       title: 'CloudVault — Secure Cloud File Platform',
@@ -42,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Client-side persistence using LocalStorage with rapid multi-criteria search filtering.',
         'Polished dark-mode glassmorphic interface with accessible keyboard navigation.'
       ],
-      githubUrl: 'https://github.com/sohanenjamuri/cloudvault-storage',
-      liveUrl: 'https://sohanenjamuri.github.io/cloudvault-storage'
+      githubUrl: 'https://github.com/mitradasari/cloudvault-storage',
+      liveUrl: 'https://mitradasari.github.io/cloudvault-storage'
     },
     algoarena: {
       title: 'AlgoArena — Interactive Algorithm Visualizer',
@@ -58,8 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Live comparison counters, swap counters, and Big-O space-time complexity analysis tables.',
         'Step-by-step manual step forward/backward debugging controls.'
       ],
-      githubUrl: 'https://github.com/sohanenjamuri/algo-arena-visualizer',
-      liveUrl: 'https://sohanenjamuri.github.io/algo-arena-visualizer'
+      githubUrl: 'https://github.com/mitradasari/algo-arena-visualizer',
+      liveUrl: 'https://mitradasari.github.io/algo-arena-visualizer'
     },
     shopwave: {
       title: 'ShopWave — Next-Gen E-Commerce Web App',
@@ -74,8 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Interactive coupon code verification engine with dynamic subtotal recalculation.',
         'Responsive layout optimized for smartphones, tablets, and wide desktop displays.'
       ],
-      githubUrl: 'https://github.com/sohanenjamuri/shopwave-ecommerce',
-      liveUrl: 'https://sohanenjamuri.github.io/shopwave-ecommerce'
+      githubUrl: 'https://github.com/mitradasari/shopwave-ecommerce',
+      liveUrl: 'https://mitradasari.github.io/shopwave-ecommerce'
     }
   };
 
@@ -546,7 +562,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const copyEmailBtn = document.getElementById('copy-email-btn');
   if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', () => {
-      const email = 'sunnyenjamuri4456@gmail.com';
+      const email = 'mitradasari232@gmail.com';
       navigator.clipboard.writeText(email).then(() => {
         const originalHtml = copyEmailBtn.innerHTML;
         copyEmailBtn.innerHTML = `<i class="fa-solid fa-check"></i> <span>Copied!</span>`;
@@ -558,7 +574,7 @@ document.addEventListener('DOMContentLoaded', () => {
           copyEmailBtn.style.color = '';
         }, 2500);
       }).catch(() => {
-        showToast('Failed to copy. Please manually copy sunnyenjamuri4456@gmail.com', 'error');
+        showToast('Failed to copy. Please manually copy mitradasari232@gmail.com', 'error');
       });
     });
   }
@@ -628,5 +644,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  console.log('Portfolio initialized successfully for Sohan Enjamuri (Course: IT4048).');
+  console.log('Portfolio initialized successfully for Mitra Dasari (Course: IT4048).');
 });

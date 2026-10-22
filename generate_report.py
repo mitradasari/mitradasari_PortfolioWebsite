@@ -4,7 +4,7 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image, PageBreak, HRFlowable
 import os
 
-pdf_path = "c:/sunny/mitra_github_project/GitHub_EnrollmentNo_SohanEnjamuri.pdf"
+pdf_path = "c:/sunny/mitra_github_project/GitHub_EnrollmentNo_MitraDasari.pdf"
 
 doc = SimpleDocTemplate(
     pdf_path,
@@ -89,10 +89,10 @@ story.append(HRFlowable(width="100%", thickness=1.5, color=ACCENT, spaceBefore=2
 # 1. Student & Submission Information Table
 story.append(Paragraph("1. STUDENT & SUBMISSION METADATA", section_title))
 metadata_data = [
-    [Paragraph("<b>Student Name:</b>", body), Paragraph("Sohan Enjamuri (Sunny)", body), Paragraph("<b>Enrollment No:</b>", body), Paragraph("<i>[Insert Enrollment Number Here]</i>", body)],
+    [Paragraph("<b>Student Name:</b>", body), Paragraph("Mitra Dasari", body), Paragraph("<b>Enrollment No:</b>", body), Paragraph("<i>[Insert Enrollment Number Here]</i>", body)],
     [Paragraph("<b>Course Code:</b>", body), Paragraph("IT4048", body), Paragraph("<b>Course Name:</b>", body), Paragraph("Version Control with Git & GitHub", body)],
-    [Paragraph("<b>GitHub Username:</b>", body), Paragraph("sohanenjamuri", body), Paragraph("<b>Email Address:</b>", body), Paragraph("sunnyenjamuri4456@gmail.com", body)],
-    [Paragraph("<b>Repository Link:</b>", body), Paragraph("https://github.com/sohanenjamuri/SohanEnjamuri_PortfolioWebsite", body), Paragraph("<b>Live Pages Link:</b>", body), Paragraph("https://sohanenjamuri.github.io/SohanEnjamuri_PortfolioWebsite/", body)],
+    [Paragraph("<b>GitHub Username:</b>", body), Paragraph("mitradasari", body), Paragraph("<b>Email Address:</b>", body), Paragraph("mitradasari232@gmail.com", body)],
+    [Paragraph("<b>Repository Link:</b>", body), Paragraph("https://github.com/mitradasari/MitraDasari_PortfolioWebsite", body), Paragraph("<b>Live Pages Link:</b>", body), Paragraph("https://mitradasari.github.io/MitraDasari_PortfolioWebsite/", body)],
     [Paragraph("<b>Submission Date:</b>", body), Paragraph("24th October 2026", body), Paragraph("<b>Format Standard:</b>", body), Paragraph("GitHub_EnrollmentNo_YourName", body)]
 ]
 

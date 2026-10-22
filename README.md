@@ -1,8 +1,9 @@
 # Personal Portfolio Website — IT4048 Mini Project
 **Subject Code:** IT4048 Version Control with Git and GitHub  
-**Student Name:** Sohan Enjamuri (Sunny)  
-**Live GitHub Pages Demo:** [https://sohanenjamuri.github.io/SohanEnjamuri_PortfolioWebsite/](https://sohanenjamuri.github.io/SohanEnjamuri_PortfolioWebsite/)  
-**GitHub Repository:** [https://github.com/sohanenjamuri/SohanEnjamuri_PortfolioWebsite](https://github.com/sohanenjamuri/SohanEnjamuri_PortfolioWebsite)  
+**Student Name:** Mitra Dasari  
+**Email:** [mitradasari232@gmail.com](mailto:mitradasari232@gmail.com)  
+**Live GitHub Pages Demo:** [https://mitradasari.github.io/MitraDasari_PortfolioWebsite/](https://mitradasari.github.io/MitraDasari_PortfolioWebsite/)  
+**GitHub Repository:** [https://github.com/mitradasari/MitraDasari_PortfolioWebsite](https://github.com/mitradasari/MitraDasari_PortfolioWebsite)  
 
 ---
 
@@ -17,16 +18,16 @@ The website highlights the student's background, technical and soft skills, feat
 
 | Requirement Item from Guidelines | Implementation Details | Status |
 | :--- | :--- | :---: |
-| **1. Home / About Section** | Student's name (Sohan Enjamuri), high-resolution portrait photograph, professional dynamic typing tagline, concise biography, and academic highlights for IT4048. | ✅ Completed |
-| **2. Skills Section** | Categorized list of technical skills (Frontend, Backend, Git/DevOps) and soft skills (Problem Solving, Collaboration, PR Reviews), complete with icons, badges, and animated progress bars. | ✅ Completed |
-| **3. Projects Section** | 4 full sample projects (`DevPulse`, `CloudVault`, `AlgoArena`, `ShopWave`) with descriptions, tech stack tags, GitHub repository links, live preview buttons, and interactive Quick View modal dialogs. | ✅ Completed |
-| **4. Contact Section** | Direct clickable links for LinkedIn, GitHub, and Email (`sunnyenjamuri4456@gmail.com`), instant copy email button, plus an interactive contact form with client-side field validation and animated feedback. | ✅ Completed |
-| **5. Résumé Download Button** | Working button to download the PDF résumé (`resume.pdf`), along with an in-browser modal viewer. | ✅ Completed |
+| **1. Home / About Section** | Student's name (Mitra Dasari), portrait photograph, professional dynamic typing tagline, concise biography (UKA Tarsadia University, Computer Science Engineering), and academic highlights. | ✅ Completed |
+| **2. Skills Section** | Categorized list of technical skills (HTML, CSS, Java, SQL, Web Design) and core strengths (Continuous Learning, Problem Solving), complete with icons, badges, and animated progress bars. | ✅ Completed |
+| **3. Projects Section** | Academic and showcase projects (including **Ethnic Hub – Wholesale Traditional Wear Website** from the official resume), with tech stack tags, GitHub links, live preview buttons, and interactive Quick View modal dialogs. | ✅ Completed |
+| **4. Contact Section** | Direct clickable links for LinkedIn, GitHub, and Email (`mitradasari232@gmail.com`), instant copy email button, plus an interactive contact form with client-side field validation and animated feedback. | ✅ Completed |
+| **5. Résumé Download Button** | Working button to download the PDF résumé (`resume.pdf` / `Mitra_Dasari_Resume.pdf`), along with an in-browser modal viewer. | ✅ Completed |
 | **Design: Responsive Layout** | 100% responsive across desktop (1920px, 1200px), tablet (768px-1024px), and mobile (down to 320px) with slide-out drawer menu. | ✅ Completed |
 | **Design: Consistent Color Theme** | Modern obsidian/indigo dark theme with cyan highlights, plus an instant Dark / Light mode toggle saved in `localStorage`. | ✅ Completed |
 | **Design: Smooth Navigation** | Fixed glassmorphism navbar with scrollspy active link indicator and smooth scroll to sections. | ✅ Completed |
 | **Design: Interactivity & Animations** | Animated typing hero tagline, floating badge cards, hover lift/glow effects, animated progress bars, modal popups, and toast notifications. | ✅ Completed |
-| **Design: Footer Links** | Social media channels (GitHub, LinkedIn, Email, Twitter/X), course disclaimer, navigation links, and back-to-top button. | ✅ Completed |
+| **Design: Footer Links** | Social media channels (GitHub, LinkedIn, Email, Twitter/X), navigation links, and back-to-top button. | ✅ Completed |
 
 ---
 
@@ -37,18 +38,19 @@ mitra_github_project/
 ├── index.html                           # Main portfolio single-page application
 ├── style.css                            # Modern Vanilla CSS design system & tokens
 ├── script.js                            # Client-side interactivity (typing, theme, modals, validation)
-├── resume.html                          # Accessible HTML résumé template
-├── resume.pdf                           # Official downloadable A4 PDF résumé
+├── resume.html                          # Accessible HTML résumé template (Mitra Dasari)
+├── resume.pdf                           # Official downloadable A4 PDF résumé (Mitra Dasari)
 ├── generate_resume.py                   # Python ReportLab generator for resume.pdf
 ├── generate_report.py                   # Python ReportLab generator for submission PDF report
-├── GitHub_EnrollmentNo_SohanEnjamuri.pdf# Complete mini-project report with screenshots
+├── GitHub_EnrollmentNo_MitraDasari.pdf  # Complete mini-project report with screenshots
 ├── README.md                            # Project documentation & deployment guide
 └── assets/
     ├── docs/
-    │   └── Sohan_Enjamuri_Resume.pdf    # Backup copy of PDF resume
+    │   └── Mitra_Dasari_Resume.pdf      # Backup copy of PDF resume
     └── images/
         ├── favicon.svg                  # Vector browser favicon
         ├── profile.jpg                  # Professional portrait headshot
+        ├── project-ethnichub.jpg        # Ethnic Hub academic project preview
         ├── project-devpulse.jpg         # DevPulse project preview
         ├── project-cloudvault.jpg       # CloudVault project preview
         ├── project-algoarena.jpg        # AlgoArena project preview
@@ -69,23 +71,20 @@ mitra_github_project/
 
 Follow these exact steps to push this project to GitHub and deploy it on **GitHub Pages**:
 
-### Step 1: Initialize Git and Commit All Files
+### Step 1: Commit All Files
 Open terminal or PowerShell in this project folder:
 ```bash
-# 1. Initialize local Git repository (if not already done)
-git init
-
-# 2. Add all project files
+# 1. Add all project files
 git add .
 
-# 3. Create initial commit
-git commit -m "feat: complete personal portfolio website for IT4048 mini-project submission"
+# 2. Create commit
+git commit -m "feat: update resume and portfolio profile to Mitra Dasari"
 ```
 
 ### Step 2: Create a New GitHub Repository
 1. Log in to [GitHub](https://github.com/).
 2. Click **New Repository** (or visit `https://github.com/new`).
-3. Repository Name: `YourName_PortfolioWebsite` (e.g. `SohanEnjamuri_PortfolioWebsite`).
+3. Repository Name: `MitraDasari_PortfolioWebsite`.
 4. Set visibility to **Public** (required for grading).
 5. Do **not** initialize with a README, .gitignore, or license (we already have them).
 6. Click **Create repository**.
@@ -96,14 +95,14 @@ git commit -m "feat: complete personal portfolio website for IT4048 mini-project
 git branch -M main
 
 # Add your GitHub remote repository (replace with your repository URL)
-git remote add origin https://github.com/sohanenjamuri/SohanEnjamuri_PortfolioWebsite.git
+git remote add origin https://github.com/mitradasari/MitraDasari_PortfolioWebsite.git
 
 # Push files to GitHub
 git push -u origin main
 ```
 
 ### Step 4: Deploy Live using GitHub Pages
-1. On GitHub, go to your repository: `https://github.com/sohanenjamuri/SohanEnjamuri_PortfolioWebsite`
+1. On GitHub, go to your repository: `https://github.com/mitradasari/MitraDasari_PortfolioWebsite`
 2. Click **Settings** (top navigation tab).
 3. In the left sidebar, click **Pages** (under the "Code and automation" section).
 4. Under **Build and deployment**:
@@ -113,7 +112,7 @@ git push -u origin main
 5. Wait 1–2 minutes for the GitHub Actions deployment to finish.
 6. Refresh the page; your live link will be generated:
    ```text
-   https://sohanenjamuri.github.io/SohanEnjamuri_PortfolioWebsite/
+   https://mitradasari.github.io/MitraDasari_PortfolioWebsite/
    ```
 7. Open the live link in your browser to verify all links, buttons, and sections.
 
@@ -124,15 +123,15 @@ git push -u origin main
 Prepare the following 3 items for submission as specified in the assignment PDF:
 
 1. **GitHub Repository Link:**  
-   `https://github.com/sohanenjamuri/SohanEnjamuri_PortfolioWebsite`
+   `https://github.com/mitradasari/MitraDasari_PortfolioWebsite`
 2. **Live GitHub Pages Link:**  
-   `https://sohanenjamuri.github.io/SohanEnjamuri_PortfolioWebsite/`
+   `https://mitradasari.github.io/MitraDasari_PortfolioWebsite/`
 3. **Short Project Report (PDF):**  
-   - Generated file: `GitHub_EnrollmentNo_SohanEnjamuri.pdf` (rename `EnrollmentNo` to your student enrollment number).
+   - Generated file: `GitHub_EnrollmentNo_MitraDasari.pdf` (rename `EnrollmentNo` to your student enrollment number).
    - Contains: Student Name, Enrollment Number, Project Objective, Technologies Used, Website Page Screenshots, Repository Link, and Live Pages Link.
 4. **Google Drive Submission Folder:**  
    Upload the PDF report and links to the course Google Drive link:  
    `https://drive.google.com/drive/folders/122W5B3tNqc7r6aJS-tIkOIpjNgjHJ_dj?usp=sharing`
 
 ---
-© 2026 Sohan Enjamuri. Built for IT4048: Version Control with Git and GitHub.
+© 2026 Mitra Dasari. Built for IT4048: Version Control with Git and GitHub.

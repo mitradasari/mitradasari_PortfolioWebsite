@@ -15,83 +15,35 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectsData = {
     ethnichub: {
       title: 'Ethnic Hub — Wholesale Traditional Wear Website',
-      category: 'Academic Project & Web Design',
+      category: 'Academic Project & Web Development',
       badge: 'Academic Project',
       image: 'assets/images/project-ethnichub.jpg',
-      tags: ['HTML5', 'CSS3', 'Web Design', 'Java', 'SQL'],
-      description: 'A dedicated website concept engineered for a traditional-wear wholesale business, featuring categorized catalog displays, interactive shopping cart capabilities, and database-driven product inventory.',
+      tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL', 'XAMPP'],
+      description: 'A specialized e-commerce web platform concept engineered for a traditional-wear wholesale business, featuring bulk product catalogs, shopping cart operations, customer inquiry forms, and relational database management via MySQL.',
       features: [
-        'Developed a comprehensive website concept tailored for traditional-wear wholesale businesses.',
-        'Designed responsive web pages to present ethnic wear collections with detailed product views.',
-        'Implemented core customer workflows: catalog filtering, dynamic shopping cart, and contact inquiry form.',
-        'Explored SQL database schema integration and web functionality for inventory management.'
+        'Developed a website concept for a traditional-wear wholesale business.',
+        'Designed web pages to present ethnic wear products and their details.',
+        'Worked on features such as product display, shopping cart, and contact form.',
+        'Explored database integration and website functionality with PHP and MySQL under XAMPP.'
       ],
       githubUrl: 'https://github.com/mitradasari/ethnic-hub-website',
       liveUrl: 'https://mitradasari.github.io/ethnic-hub-website'
     },
-    devpulse: {
-      title: 'DevPulse — Developer Activity & GitHub Analytics',
-      category: 'Full Stack & GitHub API',
-      badge: 'IT4048 Project Highlight',
-      image: 'assets/images/project-devpulse.jpg',
-      tags: ['JavaScript', 'GitHub REST API', 'Chart.js', 'CSS3', 'Git CI/CD'],
-      description: 'DevPulse is a high-performance developer metrics web dashboard that interfaces with the GitHub REST API to track commit cadences, code changes, and team pull request velocity in real-time.',
+    studentskillswap: {
+      title: 'Student Skill Swap — Student Skill Exchange Platform',
+      category: 'Peer Learning & Full Stack Platform',
+      badge: 'Student Platform',
+      image: 'assets/images/project-studentskillswap.jpg',
+      tags: ['HTML', 'CSS', 'PHP', 'MySQL', 'XAMPP', 'phpMyAdmin'],
+      description: 'An interactive peer-to-peer student skill sharing portal enabling university students to create profiles, list skills offered and wanted, match with peer mentors, and manage exchange sessions backed by a MySQL database.',
       features: [
-        'Real-time visualization of commit frequencies and pull request timelines with Chart.js.',
-        'Client-side cache strategy reducing GitHub REST API rate-limiting penalties by 40%.',
-        'Configurable repository selector supporting both public and personal developer profiles.',
-        'Zero-dependency build pipeline configured for instant GitHub Pages continuous deployment.'
+        'Student profile setup featuring skills offered (e.g. Java, Web Development, SQL) and skills desired.',
+        'Search and filter functionality by skill category, semester, and student availability.',
+        'Direct skill swap request workflow with request status tracking and notifications.',
+        'Backend relational schema built with MySQL, XAMPP, and phpMyAdmin for user management.'
       ],
-      githubUrl: 'https://github.com/mitradasari/devpulse-analytics',
-      liveUrl: 'https://mitradasari.github.io/devpulse-analytics'
-    },
-    cloudvault: {
-      title: 'CloudVault — Secure Cloud File Platform',
-      category: 'Frontend & Glassmorphism',
-      badge: 'Modern Web App',
-      image: 'assets/images/project-cloudvault.jpg',
-      tags: ['HTML5', 'CSS Glassmorphism', 'JavaScript (ES6+)', 'LocalStorage API'],
-      description: 'A modern, responsive cloud storage portal featuring intuitive drag-and-drop file uploads, progress monitoring, simulated end-to-end client-side encryption, and file categorization.',
-      features: [
-        'Drag-and-drop file upload with real-time size validation and visual progress indicators.',
-        'Category breakdown filters for Documents, Images, Code, and Archives.',
-        'Client-side persistence using LocalStorage with rapid multi-criteria search filtering.',
-        'Polished dark-mode glassmorphic interface with accessible keyboard navigation.'
-      ],
-      githubUrl: 'https://github.com/mitradasari/cloudvault-storage',
-      liveUrl: 'https://mitradasari.github.io/cloudvault-storage'
-    },
-    algoarena: {
-      title: 'AlgoArena — Interactive Algorithm Visualizer',
-      category: 'Interactive Tools & CS Education',
-      badge: 'Algorithms & Data Structures',
-      image: 'assets/images/project-algoarena.jpg',
-      tags: ['JavaScript ES6', 'HTML5 Canvas', 'Sorting Algorithms', 'CSS Animations'],
-      description: 'An interactive pedagogical tool designed to demystify classic computer science algorithms (QuickSort, MergeSort, BubbleSort, and Binary Search) through step-by-step canvas rendering.',
-      features: [
-        'Real-time color-coded bar rendering highlighting comparisons, pivots, and sorted partitions.',
-        'Adjustable array sizes (10 to 100 elements) and granular playback speed slider.',
-        'Live comparison counters, swap counters, and Big-O space-time complexity analysis tables.',
-        'Step-by-step manual step forward/backward debugging controls.'
-      ],
-      githubUrl: 'https://github.com/mitradasari/algo-arena-visualizer',
-      liveUrl: 'https://mitradasari.github.io/algo-arena-visualizer'
-    },
-    shopwave: {
-      title: 'ShopWave — Next-Gen E-Commerce Web App',
-      category: 'Frontend & State Management',
-      badge: 'E-Commerce Solution',
-      image: 'assets/images/project-shopwave.jpg',
-      tags: ['Modern JavaScript', 'CSS Grid', 'Shopping Cart Logic', 'Toast Feedback'],
-      description: 'A high-performance modern web storefront interface featuring instant category and price filtering, slide-out cart drawer, dynamic discount calculations, and toast alerts.',
-      features: [
-        'Instant multi-filter product catalog by category, price range, and in-stock availability.',
-        'Slide-out shopping cart drawer with quantity adjustment and persistent state.',
-        'Interactive coupon code verification engine with dynamic subtotal recalculation.',
-        'Responsive layout optimized for smartphones, tablets, and wide desktop displays.'
-      ],
-      githubUrl: 'https://github.com/mitradasari/shopwave-ecommerce',
-      liveUrl: 'https://mitradasari.github.io/shopwave-ecommerce'
+      githubUrl: 'https://github.com/mitradasari/student-skill-swap',
+      liveUrl: 'https://mitradasari.github.io/student-skill-swap'
     }
   };
 

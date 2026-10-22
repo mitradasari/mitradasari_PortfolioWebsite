@@ -128,14 +128,24 @@ story.append(Spacer(1, 2))
 story.append(Paragraph("<b>Design:</b> Web Design", body_text))
 story.append(Spacer(1, 4))
 
-# Academic Project
-story.append(Paragraph("ACADEMIC PROJECT", section_heading))
-story.append(Paragraph("<b>Ethnic Hub – Wholesale Traditional Wear Website</b>", bold_text))
-story.append(Spacer(1, 3))
+# Academic Projects
+story.append(Paragraph("ACADEMIC PROJECTS", section_heading))
+story.append(Paragraph("<b>1. Ethnic Hub – Wholesale Traditional Wear Website</b>", bold_text))
+story.append(Paragraph("<i>Technologies: HTML, CSS, JavaScript, PHP, MySQL, XAMPP</i>", body_text))
+story.append(Spacer(1, 2))
 story.append(Paragraph("• Developed a website concept for a traditional-wear wholesale business.", bullet_text))
 story.append(Paragraph("• Designed web pages to present ethnic wear products and their details.", bullet_text))
 story.append(Paragraph("• Worked on features such as product display, shopping cart, and contact form.", bullet_text))
-story.append(Paragraph("• Explored database integration and website functionality.", bullet_text))
+story.append(Paragraph("• Explored database integration and website functionality with PHP & MySQL.", bullet_text))
+story.append(Spacer(1, 4))
+
+story.append(Paragraph("<b>2. Student Skill Swap – Student Skill Exchange Platform</b>", bold_text))
+story.append(Paragraph("<i>Technologies: HTML, CSS, PHP, MySQL, XAMPP, phpMyAdmin</i>", body_text))
+story.append(Spacer(1, 2))
+story.append(Paragraph("• Engineered an interactive peer-to-peer student skill sharing and mentoring portal.", bullet_text))
+story.append(Paragraph("• Created student profile systems listing skills offered and skills sought with filter options.", bullet_text))
+story.append(Paragraph("• Implemented skill swap request workflow and study session coordination.", bullet_text))
+story.append(Paragraph("• Designed relational database tables via MySQL and phpMyAdmin for user records.", bullet_text))
 story.append(Spacer(1, 4))
 
 # Core Strengths

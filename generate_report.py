@@ -4,7 +4,8 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image, PageBreak, HRFlowable
 import os
 
-pdf_path = "c:/sunny/mitra_github_project/GitHub_EnrollmentNo_MitraDasari.pdf"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+pdf_path = os.path.join(BASE_DIR, "GitHub_EnrollmentNo_MitraDasari.pdf")
 
 doc = SimpleDocTemplate(
     pdf_path,
@@ -148,7 +149,7 @@ story.append(Spacer(1, 10))
 story.append(Paragraph("4. MANDATORY SECTIONS IMPLEMENTATION CHECKLIST", section_title))
 story.append(Paragraph("• <b>Home / About Page:</b> Professional portrait photo, dynamic typing tagline, comprehensive bio, academic context, and quick action CTAs.", bullet))
 story.append(Paragraph("• <b>Skills Page:</b> Categorized technical and soft skills (Frontend, Backend, Git/DevOps, Soft Skills) with animated proficiency percentage bars and core IT4048 badges.", bullet))
-story.append(Paragraph("• <b>Projects Page:</b> 4 featured applications (DevPulse, CloudVault, AlgoArena, ShopWave) featuring tech tags, quick view detail modals, GitHub links, and live demo buttons.", bullet))
+story.append(Paragraph("• <b>Projects Page:</b> 2 featured academic projects (1. Ethnic Hub – Wholesale Traditional Wear Website [HTML, CSS, JS, PHP, MySQL, XAMPP], 2. Student Skill Swap – Student Skill Exchange Platform [HTML, CSS, PHP, MySQL, XAMPP, phpMyAdmin]) with tech tags, quick-view detail modals, and GitHub links.", bullet))
 story.append(Paragraph("• <b>Contact Page:</b> Comprehensive contact channels (email, GitHub, LinkedIn), instant copy-to-clipboard button, and interactive contact form with real-time field validation.", bullet))
 story.append(Paragraph("• <b>Resume Download & View:</b> Functional download button for <i>resume.pdf</i> as well as embedded modal preview.", bullet))
 story.append(Paragraph("• <b>Responsive & Accessible:</b> Fully responsive down to 320px mobile screens with slide-out drawer menu, fluid typography, and dark/light mode toggle.", bullet))
@@ -162,8 +163,8 @@ story.append(Paragraph("The following high-resolution screenshots verify the vis
 story.append(Spacer(1, 8))
 
 # Screenshot Table 1: Home & Light Mode
-img_hero = Image("assets/images/screenshots/01_hero_home.png", width=255, height=145)
-img_light = Image("assets/images/screenshots/02_light_theme.png", width=255, height=145)
+img_hero = Image(os.path.join(BASE_DIR, "assets", "images", "screenshots", "01_hero_home.png"), width=255, height=145)
+img_light = Image(os.path.join(BASE_DIR, "assets", "images", "screenshots", "02_light_theme.png"), width=255, height=145)
 
 t_img1 = Table([
     [img_hero, img_light],
@@ -178,8 +179,8 @@ story.append(t_img1)
 story.append(Spacer(1, 8))
 
 # Screenshot Table 2: About & Skills
-img_about = Image("assets/images/screenshots/03_about_section.png", width=255, height=125)
-img_skills = Image("assets/images/screenshots/04_skills_section.png", width=255, height=125)
+img_about = Image(os.path.join(BASE_DIR, "assets", "images", "screenshots", "03_about_section.png"), width=255, height=125)
+img_skills = Image(os.path.join(BASE_DIR, "assets", "images", "screenshots", "04_skills_section.png"), width=255, height=125)
 
 t_img2 = Table([
     [img_about, img_skills],
@@ -194,8 +195,8 @@ story.append(t_img2)
 story.append(Spacer(1, 8))
 
 # Screenshot Table 3: Projects & Modal
-img_projects = Image("assets/images/screenshots/05_projects_section.png", width=255, height=135)
-img_modal = Image("assets/images/screenshots/06_project_modal.png", width=255, height=135)
+img_projects = Image(os.path.join(BASE_DIR, "assets", "images", "screenshots", "05_projects_section.png"), width=255, height=135)
+img_modal = Image(os.path.join(BASE_DIR, "assets", "images", "screenshots", "06_project_modal.png"), width=255, height=135)
 
 t_img3 = Table([
     [img_projects, img_modal],
@@ -210,7 +211,7 @@ story.append(t_img3)
 story.append(Spacer(1, 8))
 
 # Screenshot Table 4: Contact Form
-img_contact = Image("assets/images/screenshots/07_contact_section.png", width=255, height=115)
+img_contact = Image(os.path.join(BASE_DIR, "assets", "images", "screenshots", "07_contact_section.png"), width=255, height=115)
 t_img4 = Table([
     [img_contact, Paragraph("<br/><br/><b>Figure 7 (Left):</b> Contact Form with live validation, instant response alert, and clickable contact links.<br/><br/><b>Deployment:</b> Configured with standard GitHub Pages workflow from main branch.<br/><br/><b>Status:</b> 100% Tested & Verified across viewport widths.", body)]
 ], colWidths=[266, 266])

@@ -20,7 +20,7 @@ The website highlights the student's background, technical and soft skills, feat
 | :--- | :--- | :---: |
 | **1. Home / About Section** | Student's name (Mitra Dasari), portrait photograph, professional dynamic typing tagline, concise biography (UKA Tarsadia University, Computer Science Engineering), and academic highlights. | ✅ Completed |
 | **2. Skills Section** | Categorized list of technical skills (HTML, CSS, Java, SQL, Web Design) and core strengths (Continuous Learning, Problem Solving), complete with icons, badges, and animated progress bars. | ✅ Completed |
-| **3. Projects Section** | Academic and showcase projects (including **Ethnic Hub – Wholesale Traditional Wear Website** from the official resume), with tech stack tags, GitHub links, live preview buttons, and interactive Quick View modal dialogs. | ✅ Completed |
+| **3. Projects Section** | 2 featured academic projects: **Ethnic Hub – Wholesale Traditional Wear Website** (HTML, CSS, JavaScript, PHP, MySQL, XAMPP) and **Student Skill Swap – Student Skill Exchange Platform** (HTML, CSS, PHP, MySQL, XAMPP, phpMyAdmin), with tech tags, GitHub links, live demo buttons, and Quick View modals. | ✅ Completed |
 | **4. Contact Section** | Direct clickable links for LinkedIn, GitHub, and Email (`mitradasari232@gmail.com`), instant copy email button, plus an interactive contact form with client-side field validation and animated feedback. | ✅ Completed |
 | **5. Résumé Download Button** | Working button to download the PDF résumé (`resume.pdf` / `Mitra_Dasari_Resume.pdf`), along with an in-browser modal viewer. | ✅ Completed |
 | **Design: Responsive Layout** | 100% responsive across desktop (1920px, 1200px), tablet (768px-1024px), and mobile (down to 320px) with slide-out drawer menu. | ✅ Completed |
@@ -51,10 +51,7 @@ mitra_github_project/
         ├── favicon.svg                  # Vector browser favicon
         ├── profile.jpg                  # Professional portrait headshot
         ├── project-ethnichub.jpg        # Ethnic Hub academic project preview
-        ├── project-devpulse.jpg         # DevPulse project preview
-        ├── project-cloudvault.jpg       # CloudVault project preview
-        ├── project-algoarena.jpg        # AlgoArena project preview
-        ├── project-shopwave.jpg         # ShopWave project preview
+        ├── project-studentskillswap.jpg # Student Skill Swap project preview
         └── screenshots/                 # High-resolution screenshots of live website
             ├── 01_hero_home.png
             ├── 02_light_theme.png
